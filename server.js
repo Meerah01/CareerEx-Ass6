@@ -66,7 +66,7 @@ const drugs = [
 // QUESTION 2
    app.get("/drugName", (req, res)=>{
     const drugNames = drugs.map( (each) => {
-        return each.name.toLocaleLowerCase()
+        return each.name.toLowerCase()
 })
         res.json(drugNames)
    })
